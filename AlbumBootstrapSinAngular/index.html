@@ -300,13 +300,13 @@
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="playVideo();" class="btn btn-success">
+                    <button onclick="playVideo1();" class="btn btn-success">
                       Inicio 
                   </button>
                   <button onclick="pauseVideo();" class="btn btn-warning">
                       Pausa 
                   </button>
-                  <button onclick="previous()" class="btn btn-info">
+                  <button onclick="previous1()" class="btn btn-info">
                       Volver a empezar 
                   </button>
                   </div>
@@ -324,13 +324,13 @@
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="playVideo();" class="btn btn-success">
+                    <button onclick="playVideo2();" class="btn btn-success">
                       Inicio 
                   </button>
                   <button onclick="pauseVideo();" class="btn btn-warning">
                       Pausa 
                   </button>
-                  <button onclick="previous()" class="btn btn-info">
+                  <button onclick="previous2()" class="btn btn-info">
                       Volver a empezar 
                   </button>
                   </div>
@@ -342,19 +342,19 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              
+              <source src="/AlbumBootstrapSinAngular/img/A Cinematic Basketball ad (Go Together) - Sony a7SIII.mp4">
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="playVideo();" class="btn btn-success">
+                    <button onclick="playVideo3();" class="btn btn-success">
                       Inicio 
                   </button>
                   <button onclick="pauseVideo();" class="btn btn-warning">
                       Pausa 
                   </button>
-                  <button onclick="previous()" class="btn btn-info">
+                  <button onclick="previous3()" class="btn btn-info">
                       Volver a empezar 
                   </button>
                   </div>
@@ -381,20 +381,44 @@
     </div>
   </footer>
   <script src="/AlbumBootstrapSinAngular/js/bootstrap.bundle.min.js"></script>
+  <source src="/AlbumBootstrapSinAngular/img/nbalp online 30s 16x9 ilp midseason ES.mp4">
   <script type='text/javascript'>
     theVideo = document.querySelector("#myVideo");
     info = document.querySelector("#info");
     var videos = ['movie_clip', 'movie_clip2', 'movie_clip3'];
     var current = 0;
 
-    function playVideo() {
+    function playVideo1() {
         // The simplest way:
         //theVideo.src = videos[current] + '.mp4';
         
         // adding suppor for various formats
        theVideo.innerHTML = "";
-       theVideo.innerHTML = "<source src='"+videos[current]+".mp4' type='video/mp4'>";
-       theVideo.innerHTML += "<source src='"+videos[current]+".ogg' type='video/ogg'>";
+       theVideo.innerHTML = "<source src='/AlbumBootstrapSinAngular/img/A Cinematic Basketball ad (Go Together) - Sony a7SIII.mp4' type='video/mp4'>";
+       theVideo.load();
+       theVideo.play();
+       info.innerHTML = 'Now playing ' + videos[current];
+    }
+
+    function playVideo2() {
+        // The simplest way:
+        //theVideo.src = videos[current] + '.mp4';
+        
+        // adding suppor for various formats
+       theVideo.innerHTML = "";
+       theVideo.innerHTML = "<source src='/AlbumBootstrapSinAngular/img/Cómo jugar baloncesto.mp4'>";
+       theVideo.load();
+       theVideo.play();
+       info.innerHTML = 'Now playing ' + videos[current];
+    }
+
+    function playVideo3() {
+        // The simplest way:
+        //theVideo.src = videos[current] + '.mp4';
+        
+        // adding suppor for various formats
+       theVideo.innerHTML = "";
+       theVideo.innerHTML = "<source src='/AlbumBootstrapSinAngular/img/nbalp online 30s 16x9 ilp midseason ES.mp4'>";
        theVideo.load();
        theVideo.play();
        info.innerHTML = 'Now playing ' + videos[current];
@@ -405,11 +429,25 @@
        info.innerHTML = videos[current] + ' paused';
     }
 
-    function previous() {
+    function previous1() {
         if (current > 0) {
             current--;
         }
-        playVideo();
+        playVideo1();
+    }
+
+    function previous2() {
+        if (current > 0) {
+            current--;
+        }
+        playVideo2();
+    }
+
+    function previous3() {
+        if (current > 0) {
+            current--;
+        }
+        playVideo3();
     }
 </script>
 
