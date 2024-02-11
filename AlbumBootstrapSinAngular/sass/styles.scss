@@ -12,7 +12,7 @@ $terciary: white;
 
 $button-color: $terciary;
 $body-bg: $terciary;
-$border-radius-button: 5%;
+$border-radius-button: 20%;
 
 
 
@@ -55,12 +55,12 @@ img{
     
     border-color: $border-color;
     border-radius: $border-radius-button;
-    background-color: $secondary;
+    background-color: $primary;
     color: $button-color;
 }
 
 .btn:hover{
-    background-color: black;
+    background-color: $secondary;
     color: $terciary;
 }
 

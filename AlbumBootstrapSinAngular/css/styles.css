@@ -8268,19 +8268,19 @@ img {
 
 .btn {
   border-color: #dee2e6;
-  border-radius: 5%;
-  background-color: #4a4466;
+  border-radius: 20%;
+  background-color: #654765;
   color: white;
 }
 
 .btn:hover {
-  background-color: black;
+  background-color: #4a4466;
   color: white;
 }
 
 .btn .button-secondary {
   border-color: #dee2e6;
-  border-radius: 5%;
+  border-radius: 20%;
   background-color: #4a4466;
   color: white;
 }
