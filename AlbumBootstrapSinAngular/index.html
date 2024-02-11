@@ -294,7 +294,9 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              
+              <video width="640" height="360" controls>
+                <source src="/AlbumBootstrapSinAngular/img/nbalp online 30s 16x9 ilp midseason ES.mp4" type="video/mp4" id="#myVideo">
+              </video>
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -318,7 +320,9 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              
+              <video width="640" height="360" controls>
+                <source src="/AlbumBootstrapSinAngular/img/Cómo jugar baloncesto.mp4" type="video/mp4" id="#myVideo">
+              </video>
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -342,7 +346,9 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <source src="/AlbumBootstrapSinAngular/img/A Cinematic Basketball ad (Go Together) - Sony a7SIII.mp4" type="video/mp4">
+              <video width="640" height="360" controls>
+                <source src="/AlbumBootstrapSinAngular/img/A Cinematic Basketball ad (Go Together) - Sony a7SIII.mp4" type="video/mp4" id="#myVideo">
+              </video>
               <div class="card-body">
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
@@ -383,12 +389,9 @@
   <script src="/AlbumBootstrapSinAngular/js/bootstrap.bundle.min.js"></script>
   <source src="/AlbumBootstrapSinAngular/img/nbalp online 30s 16x9 ilp midseason ES.mp4">
   <script type='text/javascript'>
-    theVideo = document.querySelector("#myVideo");
-    info = document.querySelector("#info");
-    var videos = ['movie_clip', 'movie_clip2', 'movie_clip3'];
-    var current = 0;
 
     function playVideo1() {
+      theVideo = document.querySelector("#myVideo");
         // The simplest way:
         //theVideo.src = videos[current] + '.mp4';
         
@@ -401,6 +404,7 @@
     }
 
     function playVideo2() {
+      theVideo = document.querySelector("#myVideo");
         // The simplest way:
         //theVideo.src = videos[current] + '.mp4';
         
@@ -413,6 +417,7 @@
     }
 
     function playVideo3() {
+      theVideo = document.querySelector("#myVideo");
         // The simplest way:
         //theVideo.src = videos[current] + '.mp4';
         
