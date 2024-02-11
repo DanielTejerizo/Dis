@@ -8289,4 +8289,9 @@ progress {
   color: red;
 }
 
+.card {
+  max-width: 500px;
+  min-width: 200px;
+}
+
 /*# sourceMappingURL=styles.css.map */
